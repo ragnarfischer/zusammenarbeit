@@ -16,15 +16,18 @@ public class ClassControl
      */
     public void demoScannerAtWork()
     {
-        System.out.println("Schreiben Sie etwas:");
-        System.out.println(readInput());
-        
+        System.out.println("Welches Modul wollen Sie nutzen?");
+        System.out.println(readString());
+        System.out.println("Welches Zahl wollen Sie verwenden?");
+        System.out.println(readString()); // Das geht auch besser!
     }
     
     /**
      * Methode mit Beispiel für die Nutzung des Scanners in Java
+     * Hinweis:
+     * Es gibt auch eine Methode in der Scanner-API, die Integers einliest.
      */
-    public String readInput()
+    public String readString()
     {
         return scan.nextLine();
         
