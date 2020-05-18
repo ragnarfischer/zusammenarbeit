@@ -12,21 +12,9 @@ public class ClassControl
     private Scanner scan = new Scanner(System.in);
 
     /**
-     * Constructor for objects of class ClassControl
+     * Die Methode ruft readInput() auf
      */
-    public ClassControl()
-    {
-        
-        
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public void frageSchreibe()
+    public void demoScannerAtWork()
     {
         System.out.println("Schreiben Sie etwas:");
         System.out.println(readInput());
@@ -34,10 +22,7 @@ public class ClassControl
     }
     
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * Methode mit Beispiel für die Nutzung des Scanners in Java
      */
     public String readInput()
     {
