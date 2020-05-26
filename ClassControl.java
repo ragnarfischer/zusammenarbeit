@@ -21,7 +21,7 @@ public class ClassControl
         System.out.println("Welches Zahl wollen Sie verwenden?");
         System.out.println(readString()); // Das geht auch besser!
     }
-    
+
     /**
      * Methode mit Beispiel für die Nutzung des Scanners in Java
      * Hinweis:
@@ -30,6 +30,21 @@ public class ClassControl
     public String readString()
     {
         return scan.nextLine();
-        
+
+    }
+
+    public void count(int start)
+    {
+        if (start > 0)
+        {
+            while (start >= 0) {
+                System.out.println(start);
+                start--;
+            }
+            System.out.println("Countdown completed");
+        }
+        else {
+            System.out.println("This ist a illegal number, please choose a bigger one");
+        }
     }
 }
